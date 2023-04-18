@@ -1,7 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ../../base
+- ../../base/bgd-deployment.yaml
+- ../../base/bgd-route.yaml
+- ../../base/bgd-svc.yaml
 patchesJson6902:
   - target:
       version: v1
