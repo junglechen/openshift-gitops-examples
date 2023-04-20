@@ -2,7 +2,7 @@ kind: Kustomization
 namespace: bgdk
 resources:
 - ../../base
-- ns-ks.yaml
+- bgdk-ns.yaml
 patchesJson6902:
   - target:
       version: v1
